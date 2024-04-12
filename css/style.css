@@ -1,0 +1,14 @@
+#cover {
+    background-image: url("../images/cover.jpg");
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+#features {
+    min-height: 100vh;
+}
+
+#about {
+    min-height: 100vh;
+}
