@@ -6,8 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.2/dist/pulse/bootstrap.min.css">
-    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <title>EventPlugs</title>
+    <style>
+        #cover {
+            background-image: url('https://images.unsplash.com/photo-1611517976630-163467322778?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+            background-position: center;
+            background-repeat: no-repeat; 
+            background-size: cover;
+            min-height: 100vh;
+        }
+
+        #features {
+            min-height: 100vh;
+        }
+
+        #about {
+            min-height: 100vh;
+        }
+
+        header div i {
+            color: black;
+            font-size: 3rem;
+        }
+
+        #features div i {
+            color: black;
+            font-size: 6rem;
+        }
+
+        .heart {
+            color: red;
+            font-size: 2rem;
+        }
+
+        .github {
+            color: black;
+            font-size: 5rem;
+        }
+
+
+    </style>
 </head>
 
 <body>
@@ -31,43 +70,26 @@
         </div>
     </nav>
 
-    <header class="bg-light py-5" style="min-height: 100vh;     background-image: url('https://images.unsplash.com/photo-1591040092219-081fb773589c?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
-    background-position: center;
-    background-repeat: no-repeat; 
-    background-size: cover;" id="cover">
+    <header class="bg-light py-5" id="cover">
         <div class="container">
             <div class="row gap-3 align-items-center">
                 <div class="col-lg-6 mb-5">
-                    <h1 class="text-dark display-3 fw-bolder">Connect you to your local organizations retails and
-                        professionals</h1>
+                    <h1 class="text-black display-3 fw-bolder">Connect you to your local organizations retails and professionals</h1>
                 </div>
                 <div class="col">
                     <div class="d-flex flex-column gap-2">
-                        <div class="d-flex gap-3">
-                            <p class="text-black align-self-center">
-                                <svg class="bi" width="3rem" height="3rem" fill="currentColor">
-                                    <use xlink:href="/bootstrap/static/icons/bootstrap-icons.svg#geo" />
-                                </svg>
-                            </p>
+                        <div class="d-flex gap-3 align-items-center">
+                            <div><i class="bi bi-geo"></i></div>
                             <p class="text-black fw-bolder fs-3">Discover organizations retails, professionals near you
-                                and what services they provide.</p>
+                            and what services they provide.</p>
                         </div>
-                        <div class="d-flex gap-3">
-                            <p class="text-black align-self-center">
-
-                                <svg class="bi" width="3rem" height="3rem" fill="currentColor">
-                                    <use xlink:href="/bootstrap/static/icons/bootstrap-icons.svg#bell" />
-                                </svg>
-                            </p>
+                        <div class="d-flex gap-3 align-items-center">
+                            <div><i class="bi bi-bell"></i></div>
                             <p class="text-black fw-bolder fs-3">Receive focused notifications based on your interests.
                             </p>
                         </div>
-                        <div class="d-flex gap-3">
-                            <p class="text-black align-self-center">
-                                <svg class="bi" width="3rem" height="3rem" fill="currentColor">
-                                    <use xlink:href="/bootstrap/static/icons/bootstrap-icons.svg#clock" />
-                                </svg>
-                            </p>
+                        <div class="d-flex gap-3 align-items-center">
+                            <div><i class="bi bi-clock"></i></div>
                             <p class="text-black fw-bolder fs-3">Save time and effort.</p>
                         </div>
                     </div>
@@ -88,49 +110,38 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="text-dark text-center pb-3">
-                        <svg class="bi" width="5rem" height="5rem" fill="currentColor">
-                            <use xlink:href="/bootstrap/static/icons/bootstrap-icons.svg#map" />
-                        </svg>
+                    <div class="text-dark text-center">
+                        <i class="bi bi-map"></i>
                     </div>
                     <h2 class="fw-bold text-dark text-center">Access locations</h2>
                     <p class="text-dark fw-medium fs-3">Access geographical location of oragnizations, retails and
                         professionals near you on an interactive map.</p>
                 </div>
                 <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="text-dark text-center pb-3">
-                        <svg class="bi" width="5rem" height="5rem" fill="currentColor">
-                            <use xlink:href="/bootstrap/static/icons/bootstrap-icons.svg#bookmark-heart" />
-                        </svg>
+                    <div class="text-dark text-center">
+                        <i class="bi bi-bookmark-heart"></i>
                     </div>
                     <h2 class="fw-bold text-dark text-center">Suscribe to contents</h2>
                     <p class="text-dark fw-medium fs-3">Suscribe to contents of your interests.</p>
                 </div>
                 <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="text-dark text-center pb-3">
-
-                        <svg class="bi" width="5rem" height="5rem" fill="currentColor">
-                            <use xlink:href="/bootstrap/static/icons/bootstrap-icons.svg#broadcast-pin" />
-                        </svg>
+                    <div class="text-dark text-center">
+                        <i class="bi bi-broadcast-pin"></i>
                     </div>
                     <h2 class="fw-bold text-dark text-center">Publish contents</h2>
                     <p class="text-dark fw-medium fs-3">Create contents with specific topics and reach people.</p>
                 </div>
                 <div class="col-md-6 col-lg-4 mb-4">
                     <div class="text-dark text-center pb-3">
-                        <svg class="bi" width="5rem" height="5rem" fill="currentColor">
-                            <use xlink:href="/bootstrap/static/icons/bootstrap-icons.svg#envelope-paper" />
-                        </svg>
+                        <i class="bi bi-envelope-paper"></i>
                     </div>
                     <h2 class="fw-bold text-dark text-center">Instant notifications</h2>
                     <p class="text-dark fw-medium fs-3">Receive sms, email notifications once some new contents you
                         suscribe to have been published.</p>
                 </div>
                 <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="text-dark text-center pb-3">
-                        <svg class="bi" width="5rem" height="5rem" fill="currentColor">
-                            <use xlink:href="/bootstrap/static/icons/bootstrap-icons.svg#geo-alt" />
-                        </svg>
+                    <div class="text-dark text-center">
+                        <i class="bi bi-geo-alt"></i>
                     </div>
                     <h2 class="fw-bold text-dark text-center">Geospatial analysis</h2>
                     <p class="text-dark fw-medium fs-3">Visualize, Determine how many specific point of interests are
@@ -138,10 +149,7 @@
                 </div>
                 <div class="col-md-6 col-lg-4 mb-4">
                     <div class="text-dark text-center pb-3">
-
-                        <svg class="bi" width="5rem" height="5rem" fill="currentColor">
-                            <use xlink:href="/bootstrap/static/icons/bootstrap-icons.svg#graph-up-arrow" />
-                        </svg>
+                        <i class="bi bi-graph-up-arrow"></i>
                     </div>
                     <h2 class="fw-bold text-dark text-center">Anylitics</h2>
                     <p class="text-dark fw-medium fs-3">Get insights from contents you have published or suscribed to.
@@ -169,18 +177,10 @@
                         customers build strong connections with their customers.</p>
                     <p class="text-black fs-3">We build this tool in the hope, it will be useful to you without any
                         guarantees.</p>
-                    <p class="text-black text-center fs-3 mt-5">Made with <span>
-                            <svg class="bi" style="color: red" width="2rem" height="2rem" fill="currentColor">
-                                <use xlink:href="/bootstrap/static/icons/bootstrap-icons.svg#heart-fill" />
-                            </svg>
-                        </span>by <a class="link-dark fst-italic"
+                    <p class="text-black text-center fs-3 mt-5">Made with <i class="bi bi-heart-fill heart"></i> by <a class="link-dark fst-italic"
                             href="https://github.com/keglostephane">keglostephane</a> and <a
                             class="link-dark fst-italic" href="https://github.com/Chesterkxng">chesterkxng</a></p>
-                    <div class="text-center"><a href="https://github.com/keglostephane/eventplugs" alt>
-                            <svg class="bi" style="color: black" width="4rem" height="4rem" fill="currentColor">
-                                <use xlink:href="/bootstrap/static/icons/bootstrap-icons.svg#github" />
-                            </svg>
-                        </a></div>
+                    <div class="text-center"><a href="https://github.com/keglostephane/eventplugs"><i class="bi bi-github github"></i></a></div>
                 </div>
             </div>
     </section>
